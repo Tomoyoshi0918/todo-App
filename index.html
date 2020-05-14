@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todoアプリ</title>
+    <link href="./styles/styles.css" rel="stylesheet">
+    <link href="./images/favicon.png?v=1" rel="icon">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <h1 class="header__title">Todoアプリ</h1>
+        </div>
+    </div>
+
+    <div class="actions">
+        <div class="actions__container">
+            <input id="search-text" class="input" type="text" placeholder="検索">
+            <label class="checkbox">
+                <input type="checkbox" id="hide-completed">選択項目を非表示
+            </label>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="todos"></div>
+        <form id="new-todo">
+            <input type="text" class="input" name="text">
+            <button class="button">追加</button>
+        </form>
+    </div>
+
+
+    <script src="./scripts/uuidv4.js"></script>
+    <script src="./scripts/todo-functions.js"></script>
+    <script src="./scripts/todo-app.js"></script>
+</body>
+
+</html>
